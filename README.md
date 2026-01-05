@@ -51,6 +51,36 @@ retail-operations-analysis-sql/
 
 ---
 
+## 📌 Key Results (KPIs)
+Resultados globales obtenidos con `queries/01_basic_kpis.sql`:
+
+- **Transactions:** 9,994  
+- **Unique Customers:** 793  
+- **Total Sales:** 2,297,200.86  
+- **Total Profit:** 286,397.02  
+- **Avg Ticket:** 229.83  
+- **Avg Quantity:** 3.79  
+- **Avg Discount:** 0.1562  
+
+---
+
+## 💡 Key Insights (Business-Oriented)
+- El negocio genera **profit positivo** a nivel global, pero el análisis por **categoría/subcategoría** permite identificar áreas con alto volumen y baja rentabilidad (impacto directo en estrategia comercial).
+- Existe una tendencia mensual clara en ventas/profit que puede apoyar **planeación de inventario**, campañas y asignación de presupuesto.
+- El ranking de **top productos** y **top clientes** permite priorizar acciones de retención y estrategias de crecimiento (bundles, cross-sell, condiciones comerciales).
+
+---
+
+## ✅ Recommendations
+- Monitorear **profitability** por subcategoría y revisar impacto de **discount promedio** para evitar erosión de margen.
+- Usar el análisis mensual para calendarizar campañas y anticipar demanda (forecast simple como siguiente paso).
+- Implementar segmentación por clientes (top contributors) para estrategias de retención y promociones personalizadas.
+
+---
+
+
+---
+
 ## 🚀 Next Steps
 - Normalizar el dataset en tablas (orders, products, customers) y aplicar `JOINs`
 - Agregar segmentación por región/estado
