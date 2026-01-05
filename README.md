@@ -85,3 +85,45 @@ Resultados globales obtenidos con `queries/01_basic_kpis.sql`:
 - Normalizar el dataset en tablas (orders, products, customers) y aplicar `JOINs`
 - Agregar segmentación por región/estado
 - Conectar resultados a un dashboard en Power BI / Tableau
+
+## 🔁 Reproducibility (How to Run This Project)
+
+This project can be reproduced locally using **SQLite** and the provided SQL scripts.
+
+### Prerequisites
+- DB Browser for SQLite (or any SQLite-compatible client)
+- `superstore.csv` dataset located in the `data/` folder
+
+### Steps
+
+1. **Create the SQLite database**
+   - Open DB Browser for SQLite
+   - Create a new database (e.g., `retail_operations.db`)
+
+2. **Import the dataset**
+   - File → Import → Table from CSV file
+   - Select `data/superstore.csv`
+   - Table name: `superstore`
+   - Check **First row contains column names**
+   - Save changes
+
+3. **Create the cleaned table**
+   - Execute the SQL script that creates `superstore_clean` from `superstore`
+   - This step normalizes column names and prepares the data for analysis
+
+4. **Run analysis queries**
+   - Execute the SQL files in the `queries/` folder in order:
+     - `01_basic_kpis.sql`
+     - `02_sales_profit_by_category.sql`
+     - `03_monthly_trend.sql`
+     - `04_top_products.sql`
+     - `05_customer_analysis.sql`
+
+5. **Review results**
+   - Outputs provide KPIs, category profitability, monthly trends, top products, and customer analysis
+   - Results can be exported or connected to a BI tool for visualization
+
+---
+
+This reproducible workflow demonstrates a standard **Data Analyst** process: data ingestion, cleaning, KPI calculation, and business-focused analysis using SQL.
+
